@@ -1,0 +1,16 @@
+/* Custom font definition*/
+@font-face {
+    font-family: "JosefinSlab";
+    src: url("/assets/fonts/JosefinSlab-VariableFont_wght.ttf");
+}
+
+/* change this to change the font of the whole page */
+.font {
+    font-family: "JosefinSlab";
+}
+
+body {
+    background-image: url("/assets/imgs/bg2.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}

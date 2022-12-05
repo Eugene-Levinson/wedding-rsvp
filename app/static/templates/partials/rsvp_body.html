@@ -1,0 +1,116 @@
+<link href="/assets/css/rsvp.css" rel="stylesheet" media="screen">
+
+<div class="container  font" id="form-container">
+    <!-- Headings -->
+    <h1 class="text-center mt-5">No Joke!</h1>
+    <p class="text-center" style="font-size:x-large;">Finally, we are getting married! Please help us to get organised by filling in the boxes below.</p>
+    
+    <hr>
+    <br>
+
+
+    <!-- Main Form -->
+    <form style="margin-bottom: 10px;">
+        <!-- Names -->
+        <div class="form-group">
+            <label for="names">Names:</label>
+            <textarea type="text" class="form-control" id="names" name="names" rows="4" ></textarea>
+        </div>
+
+        <!-- RSVP -->
+        <div class="form-group" style="margin-top: 10px;">
+            <label for="attending">Will you be attending the wedding?</label>
+            <div class="form-check centered-block">
+            <input type="checkbox" class="form-check-input rsvp-tick" id="attending" name="attending" value="yes">
+            <label class="form-check-label" for="attending">Yes</label>
+            </div>
+            <div class="form-check">
+            <input type="checkbox" class="form-check-input rsvp-tick" id="attending" name="attending" value="no">
+            <label class="form-check-label" for="attending">No</label>
+            </div>
+        </div>
+
+        <!-- Sad msg if No :( -->
+        <div id="msg-box" class="message" style="margin-top: 10px;"></div>
+
+
+        <!-- Data if rsvp "yes" -->
+        <br>
+
+        <div id="if-yes" style="display: none;">
+            <!-- Dietry req -->
+            <div class="form-group" style="margin-top: 10px;">
+                <h3>Dietary requirements</h3>
+                <p>If you have any dietary requirements, please let us know below:</p>
+                <textarea type="text" class="form-control" id="dietary-requirements" name="dietary-requirements" rows="4"></textarea>
+            </div>
+
+            <br>
+
+
+            <!-- Accom -->
+            <div class="form-group" style="margin-top: 10px;">
+                <h3>Accomodation</h3>
+                <p>We would like to secure a block booking with chippenham Premier Inn for the night of the wedding to ensure everybody has somewhere comfortable to stay and can wake up to a good breakfast</p>
+
+                <div class="form-group" style="margin-top: 10px;">
+                    <label for="accom">Would you like a room at Chippenham Premier Inn?</label>
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input accom-tick" id="accom" name="accom" value="yes">
+                    <label class="form-check-label" for="accom">Yes</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input accom-tick" id="accom" name="accom" value="no">
+                    <label class="form-check-label" for="accom">No</label>
+                    </div>
+                </div>
+                <br>
+                <label for="accom-requirements" >If yes, please provide names of people staying and any special requirements</label>
+                <textarea type="text" class="form-control" id="accom-requirements" name="accom-requirements" style="margin-top:5px"></textarea>
+
+                <p style="margin-top:10px"><b>Please note:</b> if you would like to extend your booking please do this direcly with the Premier Inn</p>
+            </div>
+
+            <br>
+
+            <!-- Coach -->
+            <div class="form-group" styl>
+                <h3>Coach</h3>
+                <p>Although it is only a 25 minute drive from the venue to the hotel, we would like to offer an optional coach service. If you would like this service, it wil be a £5 per head.</p>
+
+                <div class="form-group" style="margin-top: 10px;">
+                    <label for="coach">Would you like this service?</label>
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input coach-tick" id="coach" name="coach" value="yes">
+                    <label class="form-check-label" for="coach">Yes</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input coach-tick" id="coach" name="coach" value="no">
+                    <label class="form-check-label" for="coach">No</label>
+                    </div>
+                </div>
+
+                <label for="coach-head-count" style="margin-top: 10px;">If yes, for how many?</label>
+                <input type="text" class="form-control" id="coach-head-count" name="coach-head-count" style="max-width: 60px; margin-top: 10px;">
+
+
+            </div>
+
+            <br>
+
+            <!-- Contact email -->
+            <div class="form-group" style="margin-top: 10px;">
+                <h3>Contact email address</h3>
+                <input type="email" class="form-control" id="dietry-requirements" name="dietry-requirements" style="max-width:500px ;">
+            </div>
+
+        </div>
+
+
+    </form>
+
+    <!-- Submit the form -->
+    <button style="margin-top:10px;" type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+
+    
+</div>

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+until ts-node app/app.ts; do
+    echo "Site is down $?.  Respawning.." >&2
+    sleep 1
+done
